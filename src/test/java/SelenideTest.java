@@ -16,8 +16,6 @@ public class SelenideTest {
         $x("//input[@type='submit']")
                 .shouldBe(Condition.visible)
                 .click();
-//       $("[class='col-xs-10 col-sm-6 center-block flash__message']")
-//               .shouldBe(Condition.visible);
         $("[class='col-xs-10 col-sm-6 center-block flash__message']")
                 .shouldBe(Condition.exactText("Invalid email or password."));
     }
